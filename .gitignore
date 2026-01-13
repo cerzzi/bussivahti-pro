@@ -1,0 +1,16 @@
+# Rust build artifacts (TÄMÄ ON SE 10k TIEDOSTOA)
+target/
+**/*.rs.bk
+
+# Omat asetukset ja API-avaimet (TÄRKEÄ!)
+Settings.toml
+
+
+# IDE settings (VS Code)
+.vscode/
+
+# Käyttöjärjestelmän roskat
+.DS_Store
+Thumbs.db
+.env
+

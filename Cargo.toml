@@ -1,0 +1,33 @@
+[package]
+name = "bussivahti-pro"
+version = "0.2.0"
+edition = "2021"
+
+[[bin]]
+name = "bussivahti-cli"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "bussivahti-gui"
+path = "src/bin/gui.rs"
+
+[dependencies]
+# Yleiset
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4"
+config = "0.13"
+futures = "0.3"
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+
+# CLI
+ratatui = "0.26"
+crossterm = "0.27"
+
+# GUI & Kartta (KAIKKI VERSIOSSA 0.29 / 0.25)
+eframe = "0.29"    # <--- UUSIN
+egui = "0.29"      # <--- UUSIN
+walkers = "0.27"   # Vaatii Egui 0.29
+image = { version = "0.25", features = ["jpeg", "png"] } # <--- Walkers vaatii tämän

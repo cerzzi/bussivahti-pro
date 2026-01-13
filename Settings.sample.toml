@@ -1,0 +1,17 @@
+# BUSSIVAHTI PRO - Asetusmalli
+# Kopioi tämä tiedosto nimelle Settings.toml ja täytä omat tietosi.
+
+[api]
+# Aseta tähän oma Digitransit API-avaimesi
+# Saat sen täältä: https://portal.digitransit.fi/
+api_key = "YOUR_API_KEY_HERE"
+
+
+[app]
+# Kuinka usein dataa päivitetään (sekunteina)
+update_interval = 30
+
+# Määrittele pysäkit muodossa: "PYSÄKKI_ID" = ["Haluamasi", "Linjat"]
+[stops]
+"tampere:0802" = ["1"]                   # Esim Pyynikintori ratikka
+
